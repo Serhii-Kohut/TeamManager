@@ -7,6 +7,13 @@ import java.io.IOException;
 
 @WebServlet("/members/create")
 public class CreateMemberServlet extends HttpServlet {
+    private MemberDao memberDao;
+
+    @Override
+    public void init() {
+        memberDao = MemberDao.getInstance();
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 

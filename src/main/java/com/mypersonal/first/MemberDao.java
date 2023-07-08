@@ -11,8 +11,9 @@ public class MemberDao {
     private MemberDao() {
     }
 
-    public MemberDao getInstance() {
+    public static MemberDao getInstance() {
         if (memberDaoInstance == null) {
+            memberDaoInstance = new MemberDao();
             return new MemberDao();
         }
         return memberDaoInstance;
