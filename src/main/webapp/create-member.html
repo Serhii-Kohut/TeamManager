@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new ClubMember</title>
+</head>
+<body>
+
+<form action="/members/create" method="post">
+  <table>
+    <tr>
+      <td>
+        <label for="memberName">MemberName: </label>
+      </td>
+      <td>
+        <input type="text" id="memberName" name="memberName">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="password">Password: </label>
+      </td>
+      <td>
+        <input type="text" id="password" name="password">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Create">
+      </td>
+      <td>
+        <input type="reset" value="Clear">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

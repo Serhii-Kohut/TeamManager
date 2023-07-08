@@ -11,8 +11,7 @@ public class Member {
         this.id = counter++;
     }
 
-    public Member(int id, String memberName, String password) {
-        this.id = id;
+    public Member(String memberName, String password) {
         this.memberName = memberName;
         this.password = password;
     }
