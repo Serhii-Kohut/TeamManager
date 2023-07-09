@@ -1,0 +1,50 @@
+/* Загальний стиль для сторінки */
+body {
+    background-color: #AC0000;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилізація заголовків */
+h2, h3 {
+    color: #000;
+}
+
+/* Стилізація посилань */
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стилізація таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #000;
+    color: #FFF;
+}
+
+tr:nth-child(even) {
+    background-color: #EEE;
+}
+
+/* Логотип клубу Мілан */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+

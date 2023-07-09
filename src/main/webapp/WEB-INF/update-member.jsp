@@ -2,7 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Update existing Member</title>
+  <title>Update existing Member</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
 <form action="/members/update" method="post">

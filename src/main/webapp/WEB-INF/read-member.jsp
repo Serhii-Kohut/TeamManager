@@ -3,19 +3,23 @@
 <html>
 <head>
     <title>Show info about Member</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
 
-<%@include file="header.html"%>
+<%@include file="header.html" %>
 <br>
 <br>
 
 <%
-  Member member = (Member) request.getAttribute("member");
+    Member member = (Member) request.getAttribute("member");
 %>
 
-<p>ID: <%=member.getId()%></p>
-<p>Member name: <%=member.getMemberName()%></p>
-<p>Password: <%=member.getPassword()%></p>
+<p>ID: <%=member.getId()%>
+</p>
+<p>Member name: <%=member.getMemberName()%>
+</p>
+<p>Password: <%=member.getPassword()%>
+</p>
 </body>
 </html>

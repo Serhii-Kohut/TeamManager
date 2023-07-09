@@ -3,7 +3,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Show all members</title>
+    <title>Show all members</title
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
 </head>
 <body>
 
