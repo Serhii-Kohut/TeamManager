@@ -14,10 +14,10 @@ public class MemberDao {
     public static MemberDao getInstance() {
         if (memberDaoInstance == null) {
             memberDaoInstance = new MemberDao();
-            return new MemberDao();
         }
         return memberDaoInstance;
     }
+
 
     public boolean create(Member member) {
         if (member != null) {

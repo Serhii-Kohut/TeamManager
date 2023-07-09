@@ -12,6 +12,7 @@ public class Member {
     }
 
     public Member(String memberName, String password) {
+        this.id = counter++;
         this.memberName = memberName;
         this.password = password;
     }

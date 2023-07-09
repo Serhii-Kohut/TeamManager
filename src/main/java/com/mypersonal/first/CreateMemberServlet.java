@@ -1,6 +1,5 @@
 package com.mypersonal.first;
 
-import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
@@ -61,11 +60,13 @@ public class CreateMemberServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String memberName = request.getParameter("memberName");
         String password = request.getParameter("password");
 
         Member member = new Member(memberName, password);
         memberDao.create(member);
+
+        response.sendRedirect("/members/list");
     }
 }

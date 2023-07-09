@@ -1,0 +1,40 @@
+<%@ page import="com.mypersonal.first.Member" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>MemberName</th>
+        <th>Password</th>
+        <th colspan="3">Operations</th>
+    </tr>
+
+    <%
+        for (Member member : (List<Member>) request.getAttribute("members")){
+        %>
+    <tr>
+        <td><%=member.getId()%></td>
+        <td><%=member.getMemberName()%></td>
+        <td><%=member.password%></td>
+        <td>
+            <a href="members/read?id=<%=member.getId()%>">Read</a>
+        </td>
+        <td>
+            <a href="members/update?id=<%=member.getId()%>">Update</a>
+        </td>
+        <td>
+            <a href="members/delete?id=<%=member.getId()%>">Delete</a>
+        </td>
+    </tr>
+    <%
+        }
+    %>
+
+</table>
+</body>
+</html>
