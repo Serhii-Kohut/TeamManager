@@ -16,7 +16,7 @@ public class MembersListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/members-list.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/members-list.jsp");
         request.setAttribute("members", memberDao.getAllMembers());
         requestDispatcher.forward(request, response);
     }

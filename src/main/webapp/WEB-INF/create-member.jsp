@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: SerhiiKo
+  Date: 09.07.2023
+  Time: 13:05
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Create new ClubMember</title>
+    <title>Create new member</title>
 </head>
 <body>
-
 <form action="/members/create" method="post">
   <table>
     <tr>
@@ -34,6 +39,5 @@
     </tr>
   </table>
 </form>
-
 </body>
 </html>
