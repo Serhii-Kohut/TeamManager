@@ -22,13 +22,13 @@
         <td><%=member.getMemberName()%></td>
         <td><%=member.password%></td>
         <td>
-            <a href="members/read?id=<%=member.getId()%>">Read</a>
+            <a href="read?id=<%=member.getId()%>">Read</a>
         </td>
         <td>
-            <a href="members/update?id=<%=member.getId()%>">Update</a>
+            <a href="update?id=<%=member.getId()%>">Update</a>
         </td>
         <td>
-            <a href="members/delete?id=<%=member.getId()%>">Delete</a>
+            <a href="delete?id=<%=member.getId()%>">Delete</a>
         </td>
     </tr>
     <%
