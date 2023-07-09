@@ -6,6 +6,10 @@
     <title>Show all members</title>
 </head>
 <body>
+
+<%@include file="header.html"%>
+<br>
+<br>
 <table border="1">
     <tr>
         <th>ID</th>

@@ -5,6 +5,11 @@
     <title>Show info about Member</title>
 </head>
 <body>
+
+<%@include file="header.html"%>
+<br>
+<br>
+
 <%
   Member member = (Member) request.getAttribute("member");
 %>

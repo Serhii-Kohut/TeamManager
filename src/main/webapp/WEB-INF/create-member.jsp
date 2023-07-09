@@ -11,6 +11,10 @@
     <title>Create new member</title>
 </head>
 <body>
+
+<%@include file="header.html"%>
+<br>
+<br>
 <form action="/members/create" method="post">
   <table>
     <tr>

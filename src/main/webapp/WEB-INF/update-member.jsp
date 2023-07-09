@@ -7,6 +7,9 @@
 <body>
 <form action="/members/update" method="post">
 
+  <%@include file="header.html"%>
+  <br>
+  <br>
   <%
     Member member = (Member) request.getAttribute("member");
   %>
